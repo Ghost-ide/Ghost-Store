@@ -1,0 +1,306 @@
+DM for Purchase: <a href="https://t.me/Ghost_IDE" target="https://t.me/Ghost_IDE">https://t.me/Ghost_IDE</a></p><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost Black Hat's Store</title>
+<style>
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Glitch background animation */
+@keyframes glitch {
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0 0; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top:0; left:0; width:100%; height:100%;
+  background: repeating-linear-gradient(45deg, #0a0a0a, #0a0a0a 10px, #00f0ff 11px, #0a0a0a 12px);
+  background-size: 200% 200%;
+  opacity: 0.1;
+  z-index: -1;
+  animation: glitch 5s infinite linear;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #222;
+  background: rgba(0,0,0,0.85);
+}
+
+header h1 {
+  font-size: 28px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+nav a {
+  margin-left: 25px;
+  font-weight: bold;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  position: relative;
+}
+
+.hero h2, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff, 0 0 15px #00f0ff;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.hero button {
+  background: #00f0ff;
+  color: #000;
+  padding: 15px 35px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #00b8b8;
+  box-shadow: 0 0 20px #00b8b8, 0 0 40px #00b8b8;
+}
+
+/* Products */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 60px 20px;
+}
+
+.product-card {
+  background: #111;
+  border: 1px solid #00f0ff;
+  border-radius: 12px;
+  width: 260px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,240,255,0.3);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(45deg, transparent, #00f0ff 2px, transparent 4px);
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.product-card:hover::before {
+  opacity: 0.2;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00f0ff;
+}
+
+.product-card h3 {
+  font-size: 24px;
+  color: #00f0ff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.product-card form button {
+  background: #00f0ff;
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00f0ff;
+  transition: 0.3s;
+}
+
+.product-card form button:hover {
+  background: #00b8b8;
+  box-shadow: 0 0 18px #00b8b8;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #222;
+  color: #888;
+}
+
+footer a { color: #00f0ff; }
+
+/* Responsive */
+@media(max-width:768px){
+  .products { flex-direction: column; align-items: center; }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1> Ghost Black Hat's Store 🕷️</h1>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Remote Access Trojan's ( Cracked Versions )</h2>
+  <p>Remote Access Trojans (RATs) are malicious tools that let attackers control devices remotely, steal data, and monitor activity. They pose serious cybersecurity risks and should never be used illegally.</p>
+</section>
+
+<section id="products" class="products">
+  <!-- Product A -->
+  <div class="product-card">
+    <h3>CraxsRat v7.0</h3>
+    <p>CraxsRat — The ultimate Remote Administration Tool.
+Manage, monitor, and control devices in real time with power and precision.
+Built for ethical hackers, tech enthusiasts, and system admins who demand performance and control.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_A">
+      <button type="submit"> INR 399</button>
+</form>
+</div>
+  
+  <!-- Product B -->
+  <div class="product-card">
+    <h3>VenomRat</h3>
+    <p>Venom RAT — Lightweight remote administration for legitimate ops.
+Monitor devices, manage files, and troubleshoot remotely — built for sysadmins, security researchers, and ethical testers. Use only with permission.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_B">
+      <button type="submit">INR 399</button>
+    </form>
+  </div>
+
+  <!-- Product C-->
+  <div class="product-card">
+    <h3>G -700</h3>
+    <p>G-700 — The next-gen remote administration and monitoring framework.
+Built for ethical hackers, researchers, and IT pros who need precision, speed, and full control. Always for authorized use only.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_A">
+      <button type="submit"> INR 399</button>
+      </form>
+  </div>
+  
+   <!-- Product D -->
+  <div class="product-card">
+    <h3>SpyNote v8.6</h3>
+    <p>SpyNote — Remote access & monitoring, built for authorized testing and device management. Designed for security researchers, sysadmins, and red teams — use only with permission.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_C">
+      <button type="submit">INR 299</button>
+    </form>
+  </div>
+  
+<!-- Product E -->
+  <div class="product-card">
+    <h3>SpyMax v4.0</h3>
+    <p>SpyMax – Advanced Remote Access Tool. Control, monitor, and manage devices in real time. Packed with features like live screen view, file access, and GPS tracking — all in one sleek interface.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_A">
+      <button type="submit">INR 299</button>
+  </form>
+  </div>
+  
+ <!-- Product F -->
+  <div class="product-card">
+    <h3>BARATA RAT</h3>
+    <p>BARATA RAT – Advanced Remote Access Tool
+Manage and monitor devices remotely with speed and precision. Built for ethical hacking, cybersecurity learning, and authorized system testing.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_A">
+      <button type="submit">INR 299</button>
+ </form>
+</div>
+ 
+  <!-- Product F -->
+  <div class="product-card">
+    <h3>Hacking Course</h3>
+    <p>Master real-world hacking skills — from basics to advanced. Learn to test, protect, and secure systems like a pro.</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_A">
+      <button type="submit">INR 99</button>
+ </form>
+</div>
+  
+  </section>
+
+<footer id="contact">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" 
+       alt="Telegram" width="30" height="30">
+</a>  
+    <p>Contact: <a href="https://t.me/Ghost_IDE" target="https://t.me/Ghost_IDE">https://t.me/Ghost_IDE</a></p>
+  <p>&copy; 2025 Ghost Store</p>
+</footer>
+</body>
+</html>
